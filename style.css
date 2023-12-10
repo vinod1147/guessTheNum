@@ -12,7 +12,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.theme {
+/* .theme {
     display: flex;
     justify-content: right;
     padding:10px 10px;
@@ -75,6 +75,31 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+} */
+
+/* body {
+    background-color: white;
+} */
+
+.whiteTheme {
+    background-color: white;
+    color: black;    
+}
+
+.darkTheme {
+    background-color: black;
+    color: white;    
+}
+
+.theme {
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+    padding: 8px 5px;
+}
+
+.switchTheme:hover {
+    text-decoration: underline;
 }
 
 .info {
@@ -111,16 +136,39 @@ input:checked+.slider:before {
     outline: none;
 }
 
-#submit {
+.submitButton {
     margin-top: 10px;
     height: 40px;
     font-size: 18px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.submit {
+    background-color: black;
+    color: white;
+}
+
+.submit:hover {
+    background-color: #1f2021;
+}
+
+.submitLight {
+    background-color: white;
+    color: black;
+}
+
+.submitLight:hover {
+    background-color: #d7dbde;
 }
 
 .extraInfoBox {
     padding: 0 15px;
+    margin-top: 7px;
 }
 
 .extraInfoBoxElement {
-    
+    padding: 7px 0;
 }

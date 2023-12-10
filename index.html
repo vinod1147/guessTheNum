@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="whiteTheme">
     <div class="box">
       <div class="theme">
-        <label class="switch">
+        <!-- <label class="switch">
           <input type="checkbox" />
           <span class="slider round"></span>
-        </label>
+        </label> -->
+        <p class="switchTheme">Switch Theme</p>
       </div>
       <div class="info">
         <h1 class="heading">Number Guessing Game</h1>
@@ -30,7 +31,7 @@
             class="guessInput"
             placeholder="Enter your number"
           />
-          <button id="submit">CHECK 😐</button>
+          <button class="submit submitButton">CHECK 😐</button>
         </form>
       </div>
       <div class="extraInfoBox">
@@ -38,10 +39,13 @@
           Your previous guesses: <span class="prevGuessSpan"></span>
         </p>
         <p class="guessremain extraInfoBoxElement">
-          Your guesses remaning: <span class="prevGuessSpan"></span>
+          Your guesses remaning: <span class="lastRemain"></span>
         </p>
-        <p class="lowOrHi"></p>
+        <p class="lowOrHi extraInfoBoxElement">
+          Hint: <span class="message"></span>
+        </p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
